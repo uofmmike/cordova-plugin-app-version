@@ -32,7 +32,9 @@ var getAppVersion = function (success, fail) {
 getAppVersion.getVersionNumber = function (success, fail) {
   return getPromisedCordovaExec('getVersionNumber', success, fail);
 };
-
+getAppVersion.getBuildNumber = function(success, fail) {
+	return getPromisedCordovaExec('getBuildNumber', success, fail);
+};
 getAppVersion.getVersionCode = function (success, fail) {
   return getPromisedCordovaExec('getVersionCode', success, fail);
 };
